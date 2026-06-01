@@ -1,9 +1,34 @@
 <html>
 <head>
     <title>My First Website</title>
+    <!-- 1. CSS goes inside <style> tags in the <head> -->
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Hello World!</h1>
     <p>Welcome to my free website hosted on GitHub Pages.</p>
+    
+    <!-- A button to test our JavaScript -->
+    <button id="alertBtn">Click Me!</button>
+
+    <!-- 2. JavaScript goes inside <script> tags at the bottom of the <body> -->
+    <script>
+        document.getElementById('alertBtn').addEventListener('click', function() {
+            alert('Your JavaScript is working perfectly!');
+        });
+    </script>
 </body>
 </html>
