@@ -44,6 +44,22 @@ border-radius: 5px;
 cursor: pointer;
 }
 
+#final-text {
+color: #ff4444;
+font-weight: bold;
+}
+
+#passF {
+background-color: #2a0000;
+color: #ff4444;
+border: 2px solid #ff4444;
+}
+
+#final-submit {
+background-color: #ff4444;
+color: black;
+}
+
 </style>
 
 <head>
@@ -56,8 +72,9 @@ cursor: pointer;
 <body>
 
 <form class="passform" action="finaler_code081g.html" onsubmit="return passcheckF()">
-Finaler Code: <input type="password" required id="passF">
-<input type="submit">
+<span id="final-text">Finaler Code:</span>
+<input type="password" required id="passF">
+<input type="submit" id="final-submit">
 </form>
 
 <form class="passform" action="wuerfel00e.html" onsubmit="return passcheck1()">
